@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+
+    <!-- Встроенные стили -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        .container {
+            margin-top: 50px;
+            padding: 20px;
+            background: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+            border-radius: 10px;
+        }
+        h1 {
+            color: #333;
+        }
+        .interact-button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        .interact-button:hover {
+            background-color: #0056b3;
+        }
+        img {
+            width: 300px;
+            height: auto;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Welcome to My Website</h1>
+        <img src="image1.jpg" alt="Example Image"> <!-- Изображение в той же папке -->
+        <button class="interact-button">Click me</button>
+    </div>
+
+    <!-- Встроенный скрипт -->
+    <script>
+        function myFunction() {
+            alert("Скрипт запущен!");
+        }
+
+        window.onload = function() {
+            const button = document.querySelector('.interact-button');
+            if (button) {
+                button.addEventListener('click', myFunction);
+            }
+        };
+    </script>
+
+</body>
+</html>
